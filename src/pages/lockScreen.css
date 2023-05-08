@@ -1,0 +1,65 @@
+.lockScrenn {
+    width:100vw;
+    height:100vh;
+    background-color: var(--side-bar-bg);
+}
+.lock-box {
+    padding: 20px 30px ;
+    width: 100%;
+    max-width: 350px;
+    border: 0.2px solid #18293d;;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.lock-icon {
+    color: #fff;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+background-color: #0e1723;
+font-size: 70px;
+margin: auto;
+}
+.lock-input {
+    width: 100%;
+    padding: 5px;
+    border:1px solid #0e1723;
+    border-radius: 10px;
+    margin:30px auto 15px;
+    color: var(--bs-gray-200);
+}
+.lock-input.chacke {
+animation: chacke 0.1s ease infinite alternate-reverse;
+border-color: var(--bs-danger);
+}
+.lock-input.chacke  input{
+color: var(--bs-danger);
+}
+@keyframes chacke {
+    0% {
+        transform: translateX(-5px);
+    } 
+    100% {
+        transform: translateX(5px);
+    }
+}
+.lock-input input {
+width: 100%;
+padding: 5px ;
+font-size: 20px;
+
+}
+.lock-input svg {
+font-size: 20px;
+}
+.lock-box button {
+    background: #0e1723;
+    width: 100%;
+    color: var(--bs-white);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }

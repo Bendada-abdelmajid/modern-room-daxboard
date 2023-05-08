@@ -1,0 +1,91 @@
+.messages-inbox{
+    display: grid;
+    grid-template-columns: 1fr 240px ;
+    overflow: hidden;
+    height: calc(100vh - 63px);
+    border: 1px solid var(--border-color);
+    border-top: 0;
+}
+.messages-inbox .head {
+    height: 45px;
+}
+.messages-users {
+border-left: 2px solid var(--border-color);
+background-color: var(--bs-white);
+}
+.messages-users .head {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.messages-users .user-info {
+    padding: 10px 15px;
+    gap: 15px;
+   font-size: 16px;
+}
+.messages-users .user-info .c-img{
+   min-width: 45px;
+   max-width: 45px;
+   background-color: var(--bs-black);
+}
+.messages-box .user-info {
+    padding: 0px;
+    gap: 10px;
+}
+.messages-box .user-info .c-img{
+   min-width: 35px;
+   max-width: 35px;
+}
+.messages-cont {
+ height: 100%;
+ background-color: var(--bs-gray-100);
+  max-height: calc(100% - 100px);
+  transition: 0.3s ease;
+  overflow-y: scroll;
+  position: relative;
+  scrollbar-width: none;
+  display: grid;
+  grid-auto-rows: min-content;
+}
+.message-form {
+    background-color: var(--bs-white);
+    height: 55px;
+    width: 100%;
+    border-top: 2px solid var(--border-color);
+}
+
+.message-form textarea{
+  padding: 17px 20px;
+resize: none;
+width: 100%;
+display: block;
+scrollbar-width: none;
+font-size: 20px;
+height: 55px;
+}
+.message-form button{
+    font-size: 30px;
+ cursor: pointer;
+    margin: 5px;
+    width: 50px;
+}
+
+
+
+.message {
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .message p {
+    padding-right: 40px;
+  }
+   .message.resiver {
+   background-color: var(--bs-gray-200);
+  
+  }
+   .message small {
+    float: right;
+    margin-top: -10px;
+  }
